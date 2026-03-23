@@ -1,20 +1,21 @@
-# World data — persisted via Railway volume, not baked into image
+# Exclude everything except Dockerfile and entrypoint
+# Build context is minimal; server files are cloned from GitHub at build time
+mods/
+libraries/
+config/
+scripts/
+TKXAddons/
+Deftu/
+*.jar
+eula.txt
+*.properties
+*.toml
+*.txt
+*.sh
+*.bat
 world/
 world_nether/
 world_the_end/
-DIM-1/
-DIM1/
-
-# Runtime artifacts
 logs/
 crash-reports/
-*.log
-*.log.gz
-
-# Windows-only files
-ServerWindows.bat
-
-# Dev/local files
 .git
-.gitignore
-README.txt
