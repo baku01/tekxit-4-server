@@ -1,0 +1,78 @@
+{
+    "type": "origins:multiple",
+    "name": "Unhumbled",
+    "description": "Bread is a plain food (and you eat it a lot,) plain food helps keep you humble; if you do not eat bread within a certain amount of time you will become unhumbled, as a result you will act recklessly getting damaged in the process. You can eat bread at any time if you are almost unhumbled.",
+    "humbleness": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 16000,
+        "start_value": 16000,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 0
+        }
+    },
+    "unhumble":{
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_humbleness",
+            "change": -1,
+            "operation": "add"
+        }
+    },
+    "humble": {
+        "type": "origins:modify_food",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:bread"
+            }
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_humbleness",
+            "change": 16000,
+            "operation": "add"
+        }
+    },
+    "ediblebreadwhenunhumbled": {
+        "type": "origins:modify_food",
+        "always_edible": true,
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:bread"
+            }
+        },
+        "condition": {
+          "type": "origins:resource",
+          "resource": "*:*_humbleness",
+          "comparison": "<=",
+          "compare_to": 4000
+        }
+    },
+    "unhumbled": {
+        "type": "origins:damage_over_time",
+        "interval": 40,
+        "damage": 2,
+        "condition": {
+          "type": "origins:and",
+          "conditions": [
+            {
+               "type": "origins:resource",
+               "resource": "*:*_humbleness",
+               "comparison": "<=",
+               "compare_to": 1
+            },
+            {
+              "type": "origins:health",
+              "comparison": ">",
+              "compare_to": 2
+            }
+          ]
+    }
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "performVersionCheck": true,
+  "origins": {
+    "origins-classes:nitwit": {
+      "enabled": true
+    },
+    "origins:enderian": {
+      "enabled": true,
+      "origins:throw_ender_pearl": true,
+      "originstweaks:recall": true,
+      "originstweaks:ender_body": true,
+      "originstweaks:reflex": true,
+      "origins:water_vulnerability": true,
+      "origins:pumpkin_hate": true,
+      "origins:ender_particles": true,
+      "origins:damage_from_potions": true,
+      "originstweaks:water_cauldron": true,
+      "originstweaks:enderian_sounds": true
+    },
+    "origins:feline": {
+      "enabled": true,
+      "originstweaks:sharp_claws": true,
+      "originstweaks:seventh_sense": true,
+      "origins:fall_immunity": true,
+      "origins:sprint_jump": true,
+      "origins:velvet_paws": true,
+      "origins:nine_lives": true,
+      "origins:weak_arms": true,
+      "origins:scare_creepers": true,
+      "origins:cat_vision": true,
+      "originstweaks:feline_sounds": true,
+      "originstweaks:natural_hunter": true
+    },
+    "origins-classes:warrior": {
+      "enabled": true,
+      "origins-classes:more_attack_damage": true,
+      "origins-classes:less_shield_slowdown": true
+    },
+    "origins:elytrian": {
+      "enabled": true,
+      "originstweaks:gift_of_the_skies": true,
+      "origins:aerial_combatant": true,
+      "origins:claustrophobia": true,
+      "origins:more_kinetic_damage": true,
+      "originstweaks:elytrian_sounds": true
+    },
+    "origins-classes:explorer": {
+      "enabled": true,
+      "origins-classes:explorer_kit": true,
+      "origins-classes:no_sprint_exhaustion": true
+    },
+    "origins:phantom": {
+      "enabled": true,
+      "origins:phantomize": true,
+      "origins:translucent": true,
+      "origins:phasing": true,
+      "origins:invisibility": true,
+      "origins:burn_in_daylight": true,
+      "origins:hunger_over_time": true,
+      "origins:phantomize_overlay": true,
+      "originstweaks:aurophobia": true,
+      "originstweaks:spectral_wail": true,
+      "originstweaks:phantom_sounds": true
+    },
+    "origins-classes:beastmaster": {
+      "enabled": true,
+      "origins-classes:tamed_animal_boost": true,
+      "origins-classes:tamed_potion_diffusal": true
+    },
+    "origins-classes:merchant": {
+      "enabled": true,
+      "origins-classes:trade_availability": true,
+      "origins-classes:rare_wandering_loot": true
+    },
+    "origins-classes:rancher": {
+      "enabled": true,
+      "origins-classes:twin_breeding": true,
+      "origins-classes:more_animal_loot": true
+    },
+    "origins:blazeborn": {
+      "enabled": true,
+      "origins:burning_wrath": true,
+      "originstweaks:thermal_lift": true,
+      "originstweaks:firecharged_projectile": true,
+      "origins:fire_immunity": true,
+      "origins:nether_spawn": true,
+      "origins:hotblooded": true,
+      "origins:water_vulnerability": true,
+      "originstweaks:water_cauldron": true,
+      "origins:damage_from_snowballs": true,
+      "origins:damage_from_potions": true,
+      "origins:flame_particles": true,
+      "originstweaks:blazeborn_sounds": true
+    },
+    "origins:avian": {
+      "enabled": true,
+      "originstweaks:evil_presence": true,
+      "originstweaks:heavens_grace": true,
+      "origins:slow_falling": true,
+      "origins:tailwind": true,
+      "origins:like_air": true,
+      "originstweaks:vegetarian": true,
+      "origins:fresh_air": true,
+      "origins:lay_eggs": true,
+      "originstweaks:avian_sounds": true
+    },
+    "origins-classes:archer": {
+      "enabled": true,
+      "origins-classes:no_projectile_divergence": true,
+      "origins-classes:less_bow_slowdown": true
+    },
+    "origins-classes:farmer": {
+      "enabled": true,
+      "origins-classes:more_crop_drops": true,
+      "origins-classes:better_bone_meal": true
+    },
+    "extraorigins:floran": {
+      "enabled": true,
+      "extraorigins:green_thumb": true,
+      "extraorigins:photosynthesis": true,
+      "extraorigins:absorbing": true,
+      "extraorigins:flammable": true,
+      "extraorigins:nectarivore": true
+    },
+    "origins-classes:miner": {
+      "enabled": true,
+      "origins-classes:more_stone_break_speed": true,
+      "origins-classes:no_mining_exhaustion": true
+    },
+    "origins-classes:cook": {
+      "enabled": true,
+      "origins-classes:better_crafted_food": true,
+      "origins-classes:more_smoker_xp": true
+    },
+    "origins:human": {
+      "enabled": true
+    },
+    "origins-classes:lumberjack": {
+      "enabled": true,
+      "origins-classes:tree_felling": true,
+      "origins-classes:more_planks_from_logs": true
+    },
+    "extraorigins:piglin": {
+      "enabled": true,
+      "extraorigins:all_that_glitters": true,
+      "extraorigins:piglin_neutrality": true,
+      "extraorigins:crossbow_master": true,
+      "origins:nether_spawn": true,
+      "extraorigins:homesick": true,
+      "origins:carnivore": true,
+      "extraorigins:flabby": true,
+      "extraorigins:soul_spooked": true
+    },
+    "origins:shulk": {
+      "enabled": true,
+      "origins:shulker_inventory": true,
+      "origins:natural_armor": true,
+      "origins:strong_arms": true,
+      "origins:strong_arms_break_speed": true,
+      "origins:no_shield": true,
+      "origins:more_exhaustion": true,
+      "originstweaks:protective_shell": true,
+      "originstweaks:antigravity_bullet": true,
+      "originstweaks:shulk_sounds": true
+    },
+    "origins-classes:cleric": {
+      "enabled": true,
+      "origins-classes:longer_potions": true,
+      "origins-classes:better_enchanting": true
+    },
+    "origins:merling": {
+      "enabled": true,
+      "origins:water_breathing": true,
+      "originstweaks:cloud": true,
+      "origins:water_vision": true,
+      "origins:aqua_affinity": true,
+      "origins:swim_speed": true,
+      "origins:like_water": true,
+      "origins:aquatic": true,
+      "origins:conduit_power_on_land": true,
+      "origins:air_from_potions": true,
+      "originstweaks:merling_trident": true,
+      "originstweaks:zora_dash": true,
+      "originstweaks:aquadynamic": true,
+      "originstweaks:water_cauldron": true,
+      "originstweaks:turtle_helmet": true,
+      "originstweaks:merling_sounds": true
+    },
+    "origins:arachnid": {
+      "enabled": true,
+      "originstweaks:master_of_webs": true,
+      "origins:master_of_webs": true,
+      "originstweaks:climbing": true,
+      "originstweaks:arthropod_appearance": true,
+      "originstweaks:carnivore": true,
+      "originstweaks:carnivore_block": true,
+      "origins:fragile": true,
+      "origins:arthropod": true,
+      "originstweaks:arachnid_sounds": true
+    },
+    "extraorigins:inchling": {
+      "enabled": true,
+      "extraorigins:bite_sized": true,
+      "extraorigins:nimble": true,
+      "extraorigins:small_appetite": true,
+      "origins:climbing": true,
+      "extraorigins:jockey": true
+    },
+    "extraorigins:truffle": {
+      "enabled": true,
+      "extraorigins:magic_spores": true,
+      "extraorigins:infestation": true,
+      "extraorigins:rooted": true,
+      "extraorigins:decomposition": true
+    },
+    "origins-classes:blacksmith": {
+      "enabled": true,
+      "origins-classes:quality_equipment": true,
+      "origins-classes:efficient_repairs": true
+    },
+    "origins-classes:rogue": {
+      "enabled": true,
+      "origins-classes:sneaky": true,
+      "origins-classes:stealth": true,
+      "origins-classes:stealth_descriptor": true
+    },
+    "grounded_origins:deer": {
+      "enabled": true,
+      "origins:vegetarian": true,
+      "grounded_origins:deer/forest_native": true,
+      "grounded_origins:deer/berry_good": true,
+      "grounded_origins:deer/oh_deer": true,
+      "grounded_origins:deer/lightweight": true,
+      "grounded_origins:deer/springed_step": true,
+      "grounded_origins:deer/hooved_grace": true
+    },
+    "grounded_origins:moth": {
+      "enabled": true,
+      "grounded_origins:moth/insect": true,
+      "grounded_origins:moth/winged": true,
+      "grounded_origins:moth/flutter": true,
+      "grounded_origins:moth/pollinator": true,
+      "grounded_origins:moth/fibrous_diet": true,
+      "grounded_origins:moth/nectar_production": true,
+      "grounded_origins:moth/four_arms": true,
+      "grounded_origins:moth/water_vulnerability": true,
+      "grounded_origins:moth/flammable": true,
+      "grounded_origins:moth/phototactic": true,
+      "grounded_origins:moth/nocturnal": true
+    },
+    "grounded_origins:beach_crab": {
+      "enabled": true,
+      "grounded_origins:beach_crab/home": true,
+      "grounded_origins:beach_crab/rave": true,
+      "grounded_origins:beach_crab/krusty": true,
+      "grounded_origins:beach_crab/legs_n_chelipeds": true,
+      "grounded_origins:beach_crab/crawler": true,
+      "grounded_origins:beach_crab/pincers": true,
+      "grounded_origins:beach_crab/shell": true,
+      "grounded_origins:beach_crab/crustacean_gills": true,
+      "grounded_origins:beach_crab/kelpomaniac": true,
+      "origins:aqua_affinity": true,
+      "origins:no_shield": true
+    },
+    "grounded_origins:penguin": {
+      "enabled": true,
+      "grounded_origins:penguin/happy_feet": true,
+      "grounded_origins:penguin/cold_embrace": true,
+      "grounded_origins:penguin/belly_sledding": true,
+      "origins:fragile": true,
+      "grounded_origins:penguin/fuzzy_fur": true,
+      "grounded_origins:penguin/aquatic_diet": true,
+      "grounded_origins:penguin/webbed_feet": true,
+      "grounded_origins:penguin/aquatic_lunge": true,
+      "grounded_origins:penguin/fish_hunter": true
+    },
+    "tekxitorigins:chikken": {
+      "enabled": true,
+      "tekxitorigins:smol": true,
+      "tekxitorigins:shortfly": true,
+      "tekxitorigins:wings": true,
+      "tekxitorigins:jockey": true,
+      "tekxitorigins:nest": true,
+      "tekxitorigins:chikken_sounds": true,
+      "tekxitorigins:headride": true,
+      "tekxitorigins:mmbread": true,
+      "tekxitorigins:unhumbled": true,
+      "tekxitorigins:seedmagic": true,
+      "tekxitorigins:chikken/wings": true,
+      "tekxitorigins:chikken/seedmagic": true,
+      "tekxitorigins:chikken/smol": true,
+      "tekxitorigins:chikken/headride": true,
+      "tekxitorigins:chikken/mmbread": true,
+      "tekxitorigins:chikken/unhumbled": true,
+      "tekxitorigins:chikken/feathered": true,
+      "tekxitorigins:chikken/naturalenemies": true,
+      "tekxitorigins:chikken/chikken_sounds": true
+    },
+    "tekxitorigins:enhancedchikken": {
+      "enabled": true,
+      "tekxitorigins:chikken/wings": true,
+      "tekxitorigins:chikken/seedmagic": true,
+      "tekxitorigins:chikken/smol": true,
+      "tekxitorigins:chikken/headride": true,
+      "tekxitorigins:chikken/mmbread": true,
+      "tekxitorigins:chikken/chikken_sounds": true
+    },
+    "tekxitorigins:transcendedchikken": {
+      "enabled": true,
+      "tekxitorigins:transcendedchikken/wings": true,
+      "tekxitorigins:transcendedchikken/seedmagic": true,
+      "tekxitorigins:chikken/smol": true,
+      "tekxitorigins:chikken/headride": true,
+      "tekxitorigins:transcendedchikken/mmbread": true,
+      "tekxitorigins:transcendedchikken/unhumbled": true,
+      "tekxitorigins:chikken/feathered": true,
+      "tekxitorigins:transcendedchikken/chikken_sounds": true,
+      "tekxitorigins:elevatedchikken/wings": true,
+      "tekxitorigins:elevatedchikken/seedmagic": true,
+      "tekxitorigins:elevatedchikken/mmbread": true,
+      "tekxitorigins:elevatedchikken/unhumbled": true,
+      "tekxitorigins:elevatedchikken/chikken_sounds": true,
+      "tekxitorigins:elevatedchikken/tasteofphase": true,
+      "tekxitorigins:elevatedchikken/phase/phantomize": true,
+      "tekxitorigins:chikken/chikken_sounds": true
+    }
+  }
+}

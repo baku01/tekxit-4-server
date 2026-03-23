@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "tekxitorigins:elevatedchikken/wings",
+    "tekxitorigins:elevatedchikken/seedmagic",
+    "tekxitorigins:elevatedchikken/tasteofphase",
+    "tekxitorigins:chikken/smol",
+    "tekxitorigins:chikken/headride",
+    "tekxitorigins:elevatedchikken/mmbread",
+    "tekxitorigins:elevatedchikken/unhumbled",
+    "tekxitorigins:chikken/feathered",
+    "tekxitorigins:chikken/chikken_sounds"
+  ],
+  "icon": "spectrum:chicken_head",
+  "order": 1,
+  "impact": 3,
+  "unchoosable": true,
+  "name": "Elevated Chikken",
+  "description": "An extremely bread dependent half human half chicken hybrid of unknown origin which has absorbed some of the power from an Ender Dragon elevating it's own."
+}

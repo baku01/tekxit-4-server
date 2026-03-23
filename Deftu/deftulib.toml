@@ -1,0 +1,7 @@
+
+[general]
+	dark_mode = false
+	update_checking = false
+	first_launch = false
+	hide_main_menu_button = false
+

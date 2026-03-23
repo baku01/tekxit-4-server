@@ -1,0 +1,20 @@
+# World data — persisted via Railway volume, not baked into image
+world/
+world_nether/
+world_the_end/
+DIM-1/
+DIM1/
+
+# Runtime artifacts
+logs/
+crash-reports/
+*.log
+*.log.gz
+
+# Windows-only files
+ServerWindows.bat
+
+# Dev/local files
+.git
+.gitignore
+README.txt

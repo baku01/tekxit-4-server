@@ -1,0 +1,8 @@
+{
+	"isMinable": false,
+	"isTreasure": true,
+	"shouldExclusiveWithFrost": true,
+	"maxEnchantmentLevel": 2,
+	"meltSpeed": "NORMAL",
+	"rarity": "RARE"
+}

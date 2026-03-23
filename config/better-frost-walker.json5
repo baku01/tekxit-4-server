@@ -1,0 +1,8 @@
+{
+	/* The level of frost walker required for the mod to apply.
+	   0 = both levels,  1 = only the first level,  2 = only the second level.
+	*/
+	"required_level": 2,
+	// If you can stand on powdered snow with frost walker.
+	"can_stand_on_powdered_snow": true,
+}

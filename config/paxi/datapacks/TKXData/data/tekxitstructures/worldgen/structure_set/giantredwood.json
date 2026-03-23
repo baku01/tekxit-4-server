@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "tekxitstructures:giantredwood",
+      "weight": 100
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 16,
+    "separation": 2,
+    "salt": 4444444444
+  }
+}

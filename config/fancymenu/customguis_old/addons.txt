@@ -1,0 +1,3 @@
+identifier = addons
+title = 
+allowesc = true

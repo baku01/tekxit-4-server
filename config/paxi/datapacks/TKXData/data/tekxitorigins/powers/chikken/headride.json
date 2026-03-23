@@ -1,0 +1,8 @@
+{
+  "name": "The Perfect Transport",
+  "description": "Since you are smol you can hop on peoples heads, you won't be protected from getting your head knocked against things though. :P",
+  "type": "extraorigins:start_riding",
+  "key": {
+	"key": "key.origins.secondary_active"
+  }
+}

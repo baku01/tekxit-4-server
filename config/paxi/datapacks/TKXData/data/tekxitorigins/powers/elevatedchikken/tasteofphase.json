@@ -1,0 +1,173 @@
+{
+	"type": "origins:multiple",
+	"name": "Taste Of Phase",
+	"description": "You have gained the knowledge and ability to phase for a short time from the Ender Dragon.",
+	"phasestrength": {
+			"type": "origins:resource",
+			"min": 0,
+			"max": 1000,
+			"start_value": 1000,
+			"hud_render": {
+					"should_render": true,
+					"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+					"bar_index": 5
+			}
+	},
+	"toggle": {
+		"type": "origins:toggle",
+		"key": {
+			"key": "key.origins.ternary_active"
+		},
+		"retain_state": false,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_phasestrength",
+			"comparison": ">",
+			"compare_to": 0
+		}
+	},
+	"overlay_green": {
+		"type": "origins:overlay",
+		"texture": "minecraft:textures/misc/nausea.png",
+		"red": 0.2,
+		"green": 0.4,
+		"blue": 0.2,
+		"strength": 0.7,
+		"draw_mode": "nausea",
+		"draw_phase": "above_hud",
+		"visible_in_third_person": true,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "*:*_toggle"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_phasestrength",
+					"comparison": ">",
+					"compare_to": 600
+				}
+			]
+		}
+	},
+	"overlay_orange": {
+		"type": "origins:overlay",
+		"texture": "minecraft:textures/misc/nausea.png",
+		"red": 0.3,
+		"green": 0.3,
+		"blue": 0.2,
+		"strength": 0.7,
+		"draw_mode": "nausea",
+		"draw_phase": "above_hud",
+		"visible_in_third_person": true,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "*:*_toggle"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_phasestrength",
+					"comparison": "<=",
+					"compare_to": 600
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_phasestrength",
+					"comparison": ">",
+					"compare_to": 300
+				}
+			]
+		}
+	},
+	"overlay_red": {
+		"type": "origins:overlay",
+		"texture": "minecraft:textures/misc/nausea.png",
+		"red": 0.4,
+		"green": 0.2,
+		"blue": 0.2,
+		"strength": 0.7,
+		"draw_mode": "nausea",
+		"draw_phase": "above_hud",
+		"visible_in_third_person": true,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "*:*_toggle"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_phasestrength",
+					"comparison": "<=",
+					"compare_to": 300
+				}
+			]
+		}
+	},
+	"phasing": {
+		"type": "origins:phasing",
+		"blacklist": true,
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "origins:unphasable"
+		},
+		"phase_down_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking"
+				},
+				{
+					"type": "origins:on_block"
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:*_toggle"
+		}
+	},
+	"invisibility": {
+		"type": "origins:model_color",
+    "alpha": 0.5,
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:*_toggle"
+		}
+	},
+	"phasestrengthdrain": {
+			"type": "origins:action_over_time",
+			"interval": 1,
+			"entity_action": {
+					"type": "origins:change_resource",
+					"resource": "*:*_phasestrength",
+					"change": -5,
+					"operation": "add"
+			},
+			"condition": {
+				"type": "origins:power_active",
+				"power": "*:*_toggle"
+			}
+	},
+	"phasestrengthgain": {
+			"type": "origins:action_over_time",
+			"interval": 1,
+			"entity_action": {
+					"type": "origins:change_resource",
+					"resource": "*:*_phasestrength",
+					"change": 5,
+					"operation": "add"
+			},
+			"condition": {
+				"type": "origins:power_active",
+				"power": "*:*_toggle",
+				"inverted": true
+		}
+	}
+}

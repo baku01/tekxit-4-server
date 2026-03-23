@@ -1,0 +1,19 @@
+{
+    "name": "Mmm, Need More Bread",
+    "description": "You love bread, however recently it does not fill you up as much as it used to; atleast other foods fill you up normally now, although I don't know how much you can eat with all that bread you have to take in.",
+    "type": "origins:multiple",
+    "more_bread": {
+    "type": "origins:modify_food",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:bread"
+        }
+    },
+    "food_modifier": {
+        "name": "Increased food points",
+        "operation": "multiply_total",
+        "value": 0.50
+    }
+  }
+}

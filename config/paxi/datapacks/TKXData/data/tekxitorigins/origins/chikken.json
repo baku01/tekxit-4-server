@@ -1,0 +1,24 @@
+{
+  "powers": [
+    "tekxitorigins:chikken/wings",
+    "tekxitorigins:chikken/seedmagic",
+    "tekxitorigins:chikken/smol",
+    "tekxitorigins:chikken/headride",
+    "tekxitorigins:chikken/mmbread",
+    "tekxitorigins:chikken/unhumbled",
+    "tekxitorigins:chikken/feathered",
+    "tekxitorigins:chikken/chikken_sounds"
+  ],
+  "upgrades": [
+    {
+        "condition": "minecraft:end/kill_dragon",
+        "origin": "tekxitorigins:transcendedchikken",
+        "announcement": "By killing the Ender Dragon you have unlocked your hidden power and become a Transcended Chikken."
+    }
+  ],
+  "icon": "spectrum:chicken_head",
+  "order": 1,
+  "impact": 3,
+  "name": "Chikken",
+  "description": "A bread dependent half human half chicken hybrid of unknown origin."
+}

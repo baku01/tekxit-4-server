@@ -1,0 +1,18 @@
+{
+  "balance": {
+    "allowSpawnerAbsorption": true,
+    "absorptionBonus": 200,
+    "allowBossSpawns": false,
+    "countCageBornForShard": false,
+    "requireOwnerOnline": false,
+    "requireRedstoneSignal": false,
+    "allowShardCombination": true,
+    "dropExperience": true,
+    "spawnCap": 32
+  },
+  "entityList": {
+    "entities": {
+      "minecraft:armor_stand": false
+    }
+  }
+}

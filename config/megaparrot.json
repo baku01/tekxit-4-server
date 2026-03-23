@@ -1,0 +1,14 @@
+{
+  "minGroupSize": 1,
+  "maxGroupSize": 4,
+  "spawnStuff": {
+    "jungle": true,
+    "spawnWeightA": 15,
+    "taiga": true,
+    "spawnWeightB": 5,
+    "desert": true,
+    "spawnWeightC": 1,
+    "plains": true,
+    "spawnWeightD": 3
+  }
+}

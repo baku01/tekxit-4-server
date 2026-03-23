@@ -1,0 +1,65 @@
+{
+  "name": "Quite Smol",
+  "description": "For unknown reasons you are the size of a chicken (probably so you can fly,) as such you will get all the upsides and downsides of being smol.",
+  "type": "origins:multiple",
+  "modify_size": {
+	"type": "extraorigins:modify_size",
+	"scale_types": [
+	  "pehkui:width",
+	  "pehkui:height",
+	  "pehkui:drops",
+	  "pehkui:visibility"
+	],
+	"scale": 0.5
+  },
+  "modify_hitbox_width": {
+	"type": "extraorigins:modify_size",
+	"scale_types": [
+	  "pehkui:hitbox_width"
+	],
+	"scale": 2
+  },
+  "attribute_modifiers": {
+	"type": "origins:attribute",
+	"modifiers": [
+	  {
+		"name": "Origin modifier",
+		"attribute": "minecraft:generic.max_health",
+		"operation": "addition",
+		"value": -4
+	  },
+	  {
+		"name": "Origin modifier",
+		"attribute": "minecraft:generic.attack_speed",
+		"operation": "addition",
+		"value": 0.5
+	  },
+	  {
+		"name": "Origin modifier",
+		"attribute": "minecraft:generic.movement_speed",
+		"operation": "addition",
+		"value": -0.01
+	  },
+	  {
+		"name": "Origin modifier",
+		"attribute": "reach-entity-attributes:attack_range",
+		"operation": "addition",
+		"value": -0.2
+	  },
+	  {
+		"name": "Origin modifier",
+		"attribute": "reach-entity-attributes:reach",
+		"operation": "addition",
+		"value": -1
+	  }
+	]
+  },
+  "jump_modifier": {
+	"type": "origins:modify_jump",
+	"modifier": {
+	  "name": "Origin modifier",
+	  "operation": "multiply_total",
+	  "value": -0.2
+	}
+  }
+}

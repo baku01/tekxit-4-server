@@ -1,0 +1,120 @@
+{
+    "type": "origins:multiple",
+    "name": "Flappier Chikken",
+    "description": "You can flap your wings for a decent amount of time (or longer with more strength,) helping you get up blocks and high places.",
+    "lift_up": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:levitation",
+                        "duration": 4,
+                        "amplifier": 1,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_wingstrength",
+                    "change": -10
+                },
+                {
+                      "type": "origins:execute_command",
+                      "command": "particle cloud ~ ~ ~ 0.1 0.75 0.1 0.01 1 normal @a"
+                },
+                {
+                      "type": "origins:play_sound",
+                      "sound": "minecraft:entity.phantom.flap",
+                      "volume": 0.6,
+                      "pitch": 2
+                }
+            ]
+        },
+        "cooldown": 3,
+        "key": {
+            "key": "key.jump",
+            "continuous": true
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_wingstrength",
+                    "comparison": ">=",
+                    "compare_to": 15
+                },
+                {
+                  "type": "origins:on_block",
+                  "inverted": true
+                },
+                {
+                  "type": "origins:riding",
+                  "inverted": true
+                }
+            ]
+        }
+    },
+    "wingstrength": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 600,
+        "start_value": 600,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 23
+        }
+    },
+    "wingstrengthregenweak":{
+        "type": "origins:action_over_time",
+        "interval": 2,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_wingstrength",
+            "change": 4,
+            "operation": "add"
+        },
+        "condition": {
+            "type": "origins:and",
+        "conditions": [
+            {
+              "type": "origins:status_effect",
+              "effect": "minecraft:strength",
+              "max_amplifier": 0
+            },
+            {
+              "type": "origins:on_block",
+              "inverted": true
+            }
+        ]
+      }
+    },
+    "wingstrengthregenstrong":{
+        "type": "origins:action_over_time",
+        "interval": 2,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_wingstrength",
+            "change": 8,
+            "operation": "add"
+        },
+        "condition": {
+            "type": "origins:or",
+        "conditions": [
+            {
+              "type": "origins:status_effect",
+              "effect": "minecraft:strength",
+              "min_amplifier": 1
+            },
+            {
+              "type": "origins:on_block"
+            }
+        ]
+      }
+    }
+}

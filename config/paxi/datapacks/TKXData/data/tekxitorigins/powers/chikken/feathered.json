@@ -1,0 +1,13 @@
+{
+  "name": "Birds Of A Feather Burn",
+  "description": "You take a bit more fire damage because of your feathery body.",
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+	"type": "origins:fire"
+  },
+  "modifier": {
+	"name": "Origin modifier",
+	"operation": "multiply_total",
+	"value": 0.33
+  }
+}

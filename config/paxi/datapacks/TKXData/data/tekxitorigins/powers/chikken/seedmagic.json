@@ -1,0 +1,140 @@
+{
+    "type": "origins:multiple",
+    "name": "The Magic Of Seed",
+    "description": "When harvesting (by breaking) fully grown wheat it lends you some of its divine seed power after consuming the seeds, you can unleash this power to gain strength, speed, and resistance once every 3 minutes.",
+    "seedmagic": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 28,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 22
+        }
+    },
+    "usemagic": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                  "type": "origins:apply_effect",
+                  "effect": {
+                      "effect": "minecraft:strength",
+                      "duration": 600,
+                      "amplifier": 1,
+                      "show_particles": true,
+                      "show_icon": true
+                    }
+                },
+                {
+                  "type": "origins:area_of_effect",
+                  "radius": 5,
+                  "bientity_action": {
+                    "type": "origins:add_velocity",
+                    "z": 2,
+                    "y": 1
+                  }
+                },
+                {
+                  "type": "origins:apply_effect",
+                  "effect": {
+                      "effect": "minecraft:speed",
+                      "duration": 1200,
+                      "amplifier": 1,
+                      "show_particles": true,
+                      "show_icon": true
+                    }
+                },
+                {
+                  "type": "origins:apply_effect",
+                  "effect": {
+                      "effect": "minecraft:resistance",
+                      "duration": 1200,
+                      "amplifier": 0,
+                      "show_particles": true,
+                      "show_icon": true
+                    }
+                },
+                {
+                  "type": "origins:change_resource",
+                  "resource": "*:*_seedmagic",
+                  "change": -4
+                },
+                {
+                  "type": "origins:play_sound",
+                  "sound": "simplyswords:magic_sword_spell_02",
+                  "volume": 1,
+                  "pitch": 0.6
+                },
+                {
+                      "type": "origins:execute_command",
+                      "command": "particle dust_color_transition .3 1 .3 1 1.3 1.3 1.3 ~ ~.5 ~ 0.5 0.33 0.5 0.01 100 normal @a"
+                }
+            ]
+        },
+        "cooldown": 3600,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 22
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_seedmagic",
+                    "comparison": ">=",
+                    "compare_to": 1
+                }
+            ]
+        }
+    },
+    "consumemagic": {
+    "type": "origins:action_on_block_break",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                    {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_seedmagic",
+                    "change": 1
+                },
+                {
+                  "type": "origins:play_sound",
+                  "sound": "simplyswords:magic_sword_spell_02",
+                  "volume": 0.3,
+                  "pitch": 0.2
+                },
+                {
+                      "type": "origins:execute_command",
+                      "command": "particle dust_color_transition .3 1 .3 1 1.3 1.3 1.3 ~ ~.5 ~ 0.5 0.33 0.5 0.01 20 normal @a"
+                },
+                {
+                      "type": "origins:execute_command",
+                      "command": "kill @e[type=item,distance=..3,nbt={Item:{id:\"minecraft:wheat_seeds\"}}]"
+                }
+            ]
+        },
+        "block_condition": {
+    "type": "origins:and",
+    "conditions": [
+        {
+            "type": "origins:block",
+            "block": "minecraft:wheat"
+        },
+        {
+            "type": "origins:block_state",
+            "comparison": ">=",
+            "property": "age",
+            "compare_to": 7
+        }
+    ]
+}
+    }
+}

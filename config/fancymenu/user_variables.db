@@ -1,0 +1,32 @@
+type = user_variables
+
+variable {
+  name = iabutton
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = shaderschecked
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = horizonschecked
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = isordhbutton
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = exitgametext
+  value = 
+  reset_on_launch = true
+}
+
